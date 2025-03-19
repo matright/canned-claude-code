@@ -9,16 +9,12 @@ Claude Code is Anthropic's official CLI tool for using Claude to assist with sof
 ## Prerequisites
 
 - Docker installed on your system
-- Anthropic API key (if you don't have one, get it from [Anthropic's console](https://console.anthropic.com/))
+- Authentication configured with `claude auth login` (will be shared from your host system)
 
 ## Setup
 
 1. Clone this repository
 2. Make the script executable: `chmod +x run-claude-code.sh`
-3. Set your Anthropic API key as an environment variable:
-   ```bash
-   export ANTHROPIC_API_KEY=your_api_key_here
-   ```
 
 ## Usage
 
@@ -37,8 +33,8 @@ You can pass any Claude Code CLI arguments:
 
 The script will:
 1. Build the Docker image if it doesn't exist
-2. Pass your Anthropic API key to the container
-3. Mount your current directory to `/app` in the container
+2. Mount your local Claude authentication from ~/.claude
+3. Mount your current directory to `/workspace` in the container
 4. Run Claude Code with any arguments you provide
 
 ## Benefits
