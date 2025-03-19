@@ -4,7 +4,7 @@ A Docker container for running Claude Code CLI without installing it directly on
 
 ## What is Claude Code?
 
-Claude Code is Anthropic's official CLI tool for using Claude to assist with software engineering tasks. This container packages Claude Code so you can use it in any environment that has Docker installed.
+[Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) is Anthropic's official CLI tool for using Claude to assist with software engineering tasks. This container packages Claude Code so you can use it in any environment that has Docker installed.
 
 ## Prerequisites
 
