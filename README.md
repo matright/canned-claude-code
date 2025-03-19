@@ -9,7 +9,7 @@ A Docker container for running Claude Code CLI without installing it directly on
 ## Prerequisites
 
 - Docker installed on your system
-- Authentication configured with `claude auth login` (will be shared from your host system)
+- Authentication configured with `claude login` (will be shared from your host system)
 
 ## Setup
 
@@ -21,14 +21,14 @@ A Docker container for running Claude Code CLI without installing it directly on
 Run Claude Code in your current directory:
 
 ```bash
-./run-claude-code.sh
+./run-claude-code.sh [COMMAND]
 ```
 
 You can pass any Claude Code CLI arguments:
 
 ```bash
 ./run-claude-code.sh --help
-./run-claude-code.sh "analyze this code"
+./run-claude-code.sh -p "analyze this code"
 ```
 
 The script will:
